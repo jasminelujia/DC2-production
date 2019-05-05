@@ -14,8 +14,6 @@ mkdir -p ${OUTPUT_DIR}
 export DESCPYTHONPATH=${HOME}/local/lsst/gcr-catalogs
 . ${SCRIPT_DIR}/setup_shifter_env.sh
 
-deepDiff_diaObject
-deepDiff_diaSrc
 python ${SCRIPT_DIR}/merge_source_cat.py ${REPO} \
    --dataset deepDiff_diaSrc \
    --output_dir ${OUTPUT_DIR} \
